@@ -1,11 +1,15 @@
 {
-    "name": "sensiolabs/consul-php-sdk",
+    "name": "caradvice/consul-php-sdk",
     "description": "SDK to talk with consul.io API",
     "license": "MIT",
     "authors": [
         {
             "name": "Grégoire Pineau",
             "email": "lyrixx@lyrixx.info"
+        },
+        {
+            "name": "Jordie Bodlay",
+            "email": "jordie@jordie.org"
         }
     ],
     "require": {
