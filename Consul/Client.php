@@ -82,7 +82,7 @@ class Client
 
         $this->logger->debug(sprintf("Response:\n%s", $this->formatResponse($response)));
 
-        if (400 <= $response->getStatusCode()) {
+        if (400 <= $response->getStatusCode() && $response->getStatusCode() != 404) {
             $message = sprintf('Something went wrong when calling consul (%s - %s).', $response->getStatusCode(), $response->getReasonPhrase());
 
             $this->logger->error($message);
