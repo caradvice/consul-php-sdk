@@ -22,7 +22,8 @@ class ConsulResponse
       }
 
       foreach($body as $kv) {
-        $key = end(explode('/',$kv['Key']));
+        $e = explode('/',$kv['Key']);
+        $key = end($e);
         $values[$key] = base64_decode($kv['Value']);
       }
 
